@@ -26,7 +26,13 @@ nav {
 }
 
 .container {
-    padding: 50px 350px;
+    padding: 50px 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: space-between; */
+    width: 100%;
+    /* max-width: 800px; */
 }
 
 h1 {
@@ -76,6 +82,7 @@ section {
     height: 85vh;
     overflow: hidden;
     display: flex;
+    /* justify-content: center; */
     align-items: center;
 }
 
@@ -89,7 +96,7 @@ section {
 
 /* FX */
 
-.gradient {
+#gradient-1 {
     background-image: radial-gradient(circle at 200% -40%, #4a6ea0, #072044 70%);
     height: 300vh;
     width: 100vw;
@@ -139,10 +146,12 @@ section {
 /* Header */
 
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     z-index: 99;
+}
+
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 header .logo {
@@ -269,7 +278,7 @@ footer a:hover {
 }
 
 .btn-lrg {
-    font-size: .7em;
+    font-size: .9em;
     margin: 10px;
     padding: 20px;
     width: 200px;
@@ -291,8 +300,8 @@ footer a:hover {
 /* Latest Posts */
 
 .posts {
-    max-height: 80vh;
-    justify-content: center;
+    height: 70vh;
+    text-align: center;
     flex-direction: column;
 }
 
@@ -315,14 +324,14 @@ footer a:hover {
 /* Partners */
 
 .partners {
-    height: 70vh;
-    justify-content: center;
-    flex-direction: column;
+    height: 60vh;
+    text-align: center;
+    transform: translateY(-50px);
 }
 
 #logo-wrapper {
     padding-top: 50px;
-    width: 80%;
+    /* width: 80%; */
 }
 
 .partners ul,
