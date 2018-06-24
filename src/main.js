@@ -123,7 +123,7 @@ particlesJS("particle-1", {
       }
     },
     "color": {
-      "value": [config.green, config.grey, config.drkBlue, config.purple]
+      "value": [config.green, config.grey, config.drkBlue, config.grey]
     },
     "shape": config.shape,
     "opacity": {
@@ -212,7 +212,7 @@ particlesJS("particle-3", {
       }
     },
     "color": {
-      "value": [config.green, config.purple, config.lightBlue]
+      "value": [config.green, config.grey, config.lightBlue]
     },
     "shape": config.shape,
     "opacity": {
