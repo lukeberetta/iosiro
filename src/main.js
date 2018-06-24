@@ -24,6 +24,7 @@ sr.reveal('.fade-2', {
 
 let config = {
   drkBlue: "#072044",
+  red: "#f66363",
   blue: "#4a6ea0",
   lightBlue: "#55a0eb",
   purple: "#623CEA",
@@ -35,8 +36,8 @@ let config = {
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
-        "mode": "bubble"
+        "enable": false,
+        "mode": "grab"
       },
       "onclick": {
         "enable": false,
@@ -101,12 +102,22 @@ let config = {
     }
   },
   size: {
-    "value": 6,
+    "value": 5,
     "random": true,
     "anim": {
       "enable": false,
       "speed": 1,
-      "size_min": 3,
+      "size_min": 4,
+      "sync": false
+    }
+  },
+  opacity: {
+    "value": 1,
+    "random": false,
+    "anim": {
+      "enable": true,
+      "speed": 1,
+      "opacity_min": 1,
       "sync": false
     }
   }
@@ -116,43 +127,24 @@ particlesJS("particle-1", {
   "particles": {
     "number": {
       // Density
-      "value": 13,
+      "value": 35,
       "density": {
         "enable": true,
-        "value_area": 200
+        "value_area": 300
       }
     },
     "color": {
-      "value": [config.green, config.grey, config.drkBlue, config.grey]
+      "value": [config.white, config.grey, config.lightBlue, config.grey, config.grey, config.grey, config.green]
     },
     "shape": config.shape,
-    "opacity": {
-      "value": 1,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 1,
-        "sync": false
-      }
-    },
-    // Balls
-    "size": {
-      "value": 8,
-      "random": true,
-      "anim": {
-        "enable": false,
-        "speed": 1,
-        "size_min": 6,
-        "sync": false
-      }
-    },
+    "opacity": config.opacity,
+    "size": config.size,
     // Links
     "line_linked": {
       "enable": true,
-      "distance": 500,
+      "distance": 280,
       "color": config.links,
-      "opacity": .7,
+      "opacity": .4,
       "width": 1
     },
     "move": config.move
@@ -172,30 +164,20 @@ particlesJS("particle-2", {
       }
     },
     "color": {
-      "value": [config.grey, config.purple, config.lightBlue]
+      "value": [config.grey, config.red, config.lightBlue]
     },
     "shape": config.shape,
-    "opacity": {
-      "value": 1,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 1,
-        "sync": false
-      }
-    },
-    // Balls
+    "opacity": config.opacity,
     "size": config.size,
     // Links
     "line_linked": {
       "enable": true,
-      "distance": 500,
+      "distance": 300,
       "color": config.links,
-      "opacity": .7,
+      "opacity": .4,
       "width": 1
     },
-    "move": config.move,
+    "move": config.move
   },
   "interactivity": config.interactivity,
   "retina_detect": true
@@ -205,7 +187,7 @@ particlesJS("particle-3", {
   "particles": {
     "number": {
       // Density
-      "value": 20,
+      "value": 18,
       "density": {
         "enable": true,
         "value_area": 200
@@ -215,23 +197,14 @@ particlesJS("particle-3", {
       "value": [config.green, config.grey, config.lightBlue]
     },
     "shape": config.shape,
-    "opacity": {
-      "value": 1,
-      "random": false,
-      "anim": {
-        "enable": true,
-        "speed": 1,
-        "opacity_min": 1,
-        "sync": false
-      }
-    },
+    "opacity": config.opacity,
     "size": config.size,
     // Links
     "line_linked": {
       "enable": true,
-      "distance": 500,
+      "distance": 300,
       "color": config.links,
-      "opacity": .7,
+      "opacity": .4,
       "width": 1
     },
     "move": config.move
