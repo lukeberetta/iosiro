@@ -177,7 +177,7 @@ section {
     /* background-image: radial-gradient(circle, #81dbff1a, #05173100 150%); */
     background-image: radial-gradient(circle, #ffffff3b, #ffffff00 60%);
     position: absolute;
-    opacity: .09;
+    opacity: .15;
 }
 
 #vignette-1 {

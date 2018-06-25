@@ -1,7 +1,7 @@
 // Scroll reveal
 
 window.sr = ScrollReveal({
-  reset: true
+  reset: false
 });
 
 sr.reveal('.fade', {
@@ -28,10 +28,11 @@ let config = {
   blue: "#4a6ea0",
   lightBlue: "#55a0eb",
   purple: "#623CEA",
-  green: "#17BEBB",
+  green: "#07BEB8",
   grey: "#556984",
-  white: "#fff",
+  white: "#B9D6F2",
   links: "#556984",
+  linkOpacity: 1,
   interactivity: {
     "detect_on": "canvas",
     "events": {
@@ -144,7 +145,7 @@ particlesJS("particle-1", {
       "enable": true,
       "distance": 280,
       "color": config.links,
-      "opacity": .4,
+      "opacity": config.linkOpacity,
       "width": 1
     },
     "move": config.move
@@ -174,7 +175,7 @@ particlesJS("particle-2", {
       "enable": true,
       "distance": 300,
       "color": config.links,
-      "opacity": .4,
+      "opacity": config.linkOpacity,
       "width": 1
     },
     "move": config.move
@@ -204,7 +205,7 @@ particlesJS("particle-3", {
       "enable": true,
       "distance": 300,
       "color": config.links,
-      "opacity": .4,
+      "opacity": config.linkOpacity,
       "width": 1
     },
     "move": config.move
