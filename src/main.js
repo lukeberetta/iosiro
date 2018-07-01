@@ -1,21 +1,36 @@
-// Scroll reveal
+const converter = "https://api.rss2json.com/v1/api.json?rss_url=";
+const mediumPage = "https%3A%2F%2Fmedium.com%2Ffeed%2F%40NickyWoolf%3Fformat%3Djson";
+const endpoint = converter + mediumPage;
 
-window.sr = ScrollReveal({
-  reset: false
+document.addEventListener("DOMContentLoaded", function() {
+  pullMedium(endpoint);
 });
 
-sr.reveal('.fade', {
-  duration: 1500,
-  delay: 50,
-  scale: 1,
-  easing: "ease",
-  distance: "15px",
-});
+function pullMedium(url) {
+  fetch(url)
+    .then(function(response) {
+      return response.json();
+    })
+    .then(function(data) {
+      handleMedium(data);
+    })
+    .catch(function(err) {
+      console.log(err);
+    });
+}
 
-sr.reveal('.fade-2', {
-  duration: 1500,
-  delay: 100,
-  scale: 1,
-  easing: "ease",
-  distance: "0",
-});
+function handleMedium(data) {
+  let posts = data.items;
+
+  let squares = ["#square1", "#square2", "#square3", "#square4"];
+  let links = ["#link1", "#link2", "#link3", "#link4"];
+
+  for (var i = 0; i < squares.length; i++) {
+    let title = posts[i].title;
+    let link = posts[i].link;
+    console.log(`\n Title: ${title} \n Link: ${link} \n`);
+    document.querySelector(squares[i]).textContent = title;
+    document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
+  }
+
+}

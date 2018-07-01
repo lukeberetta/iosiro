@@ -111,6 +111,7 @@ section {
     align-items: center;
 }
 
+.container-lrg,
 .container {
     display: flex;
     flex-direction: column;
@@ -118,6 +119,10 @@ section {
     /* overflow: hidden; */
     width: 50%;
     max-width: 850px;
+}
+
+.container-lrg {
+    width: 60%;
 }
 
 .heading {
@@ -570,8 +575,8 @@ footer a:hover {
 .post {
     margin: 15px;
     padding: 20px;
-    width: 160px;
-    height: 160px;
+    width: 180px;
+    height: 210px;
     text-align: center;
     background-color: #ffffff2c;
     border-radius: 2px;
