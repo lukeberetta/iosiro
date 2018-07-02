@@ -570,17 +570,33 @@ footer a:hover {
 .post-wrapper {
     margin-top: 70px;
     display: flex;
+    width: 100%;
 }
 
 .post {
-    margin: 15px;
-    padding: 20px;
-    width: 180px;
-    height: 210px;
+    margin: 12px;
+    padding: 15px;
+    width: 220px;
+    height: 220px;
     text-align: center;
     background-color: #ffffff2c;
     border-radius: 2px;
     transition: all .2s;
+    hyphens: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.post h3 {
+    font-size: .9em;
+    opacity: .7;
+    padding-bottom: 10px;
+}
+.post h4 {
+    font-size: .8em;
+    color: #17BEBB;
+    opacity: .6;
 }
 
 /* Partners */

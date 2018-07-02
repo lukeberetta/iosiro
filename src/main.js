@@ -1,6 +1,6 @@
 const converter = "https://api.rss2json.com/v1/api.json?rss_url=";
-const mediumPage = "https%3A%2F%2Fmedium.com%2Ffeed%2F%40NickyWoolf%3Fformat%3Djson";
-const endpoint = converter + mediumPage;
+const mediumLink = "https%3A%2F%2Fmedium.com%2Ffeed%2F%40NickyWoolf%3Fformat%3Djson";
+const endpoint = converter + mediumLink;
 
 document.addEventListener("DOMContentLoaded", function() {
   pullMedium(endpoint);
@@ -23,14 +23,18 @@ function handleMedium(data) {
   let posts = data.items;
 
   let squares = ["#square1", "#square2", "#square3", "#square4"];
+  let dates = ["#date1", "#date2", "#date3", "#date4"];
   let links = ["#link1", "#link2", "#link3", "#link4"];
 
   for (var i = 0; i < squares.length; i++) {
     let title = posts[i].title;
     let link = posts[i].link;
-    console.log(`\n Title: ${title} \n Link: ${link} \n`);
-    document.querySelector(squares[i]).textContent = title;
-    document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
-  }
+    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString("en-GB");
 
+    console.log(`\n Title: ${title} \n Link: ${link} \n Date: ${date}`);
+
+    document.querySelector(squares[i]).textContent = title;
+    document.querySelector(dates[i]).textContent = date;
+    // document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
+  }
 }
