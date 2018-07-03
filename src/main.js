@@ -29,11 +29,13 @@ function handleMedium(data) {
   for (var i = 0; i < squares.length; i++) {
     let title = posts[i].title;
     let link = posts[i].link;
-    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString("en-GB");
+    var options = { year: "numeric", month: "short", day: "numeric" };
+    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString("en-GB", options);
 
     console.log(`\n Title: ${title} \n Link: ${link} \n Date: ${date}`);
 
-    document.querySelector(squares[i]).textContent = title;
+    // document.querySelector(squares[i]).textContent = title;
+    document.querySelector(squares[i]).innerHTML = `<div onclick="window.open('${link}','mywindow');" style="cursor: pointer;"><h3>${title}</h3></div>`;
     document.querySelector(dates[i]).textContent = date;
     // document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
   }
