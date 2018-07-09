@@ -35,7 +35,7 @@ function handleMedium(data) {
     console.log(`\n Title: ${title} \n Link: ${link} \n Date: ${date}`);
 
     // document.querySelector(squares[i]).textContent = title;
-    document.querySelector(squares[i]).innerHTML = `<div onclick="window.open('${link}','mywindow');" style="cursor: pointer;"><h3>${title}</h3></div>`;
+    document.querySelector(squares[i]).innerHTML = `<div onclick="window.open('${link}','mywindow');" style="cursor: pointer;"><h2>${title}</h2></div>`;
     document.querySelector(dates[i]).textContent = date;
     // document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
   }
