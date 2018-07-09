@@ -14,7 +14,7 @@ body {
 
 #body-wrapper {
     position: absolute;
-    overflow: hidden;
+    overflow: hidden !important;
     max-width: 100%;
 }
 
@@ -119,6 +119,10 @@ section {
     /* overflow: hidden; */
     width: 50%;
     max-width: 850px;
+}
+
+.container-small {
+    padding: 0 70px;
 }
 
 .container-lrg {
@@ -275,10 +279,10 @@ section {
 
 #particle-1 {
     position: absolute;
-    left: 50%;
+    /* left: 50%; */
     height: 450px;
     width: 400px;
-    transform: translateY(230px) !important;
+    transform: translateX(-200px) translateY(-300px) !important;
 }
 
 #particle-1-services {
@@ -695,12 +699,7 @@ footer a {
 
 @media only screen and (max-width: 767px) {
     /* phones */
-    canvas {
-        display: none;
-    }
-    #particle-1 {
-        display: none;
-    }
+    /* general */
     header {
         padding-top: 30px;
     }
@@ -726,6 +725,9 @@ footer a {
         width: 85%;
         max-width: 700px;
     }
+    .container-small {
+        padding: 0;
+    }
     p {
         font-size: .85em;
     }
@@ -735,6 +737,37 @@ footer a {
     }
     .btn-small {
         width: 100%;
+    }
+    /* particels */
+    #particle-1 {
+        height: 450px;
+        width: 300px;
+        transform: translateX(-10px) translateY(-300px) !important;
+        opacity: .6;
+    }
+    #particle-1-services {
+        position: absolute;
+        left: 25%;
+        height: 400px;
+        width: 350px;
+        transform: translateY(230px) !important;
+        opacity: .5;
+    }
+    #particle-2 {
+        position: absolute;
+        height: 200px;
+        width: 200px;
+        transform: translateX(50px) translateY(-100px) !important;
+        opacity: .5;
+    }
+    #particle-3 {
+        position: absolute;
+        right: 40px;
+        height: 200px;
+        width: 200px;
+        overflow: hidden;
+        transform: translateX(-60px) translateY(-150px) !important;
+        opacity: .5;
     }
     /* Hero */
     #hero-section {
