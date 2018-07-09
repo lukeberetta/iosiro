@@ -69,11 +69,12 @@ h6 {
 }
 
 p {
-    letter-spacing: 1px;
     font-weight: 100;
     opacity: .6;
     padding: 20px 0px;
     font-size: 14.5px;
+    letter-spacing: 1.5px;
+    line-height: 23px;
 }
 
 hr {
@@ -147,7 +148,7 @@ section {
 
 .btn {
     text-align: center;
-    background-color: #ffffff2c;
+    /* background-color: #ffffff21; */
     border-radius: 1px;
     transition: all .2s;
     color: #fff;
@@ -164,7 +165,8 @@ section {
 .btn:hover,
 .post:hover {
     /* cursor: pointer; */
-    background-color: #ffffff28;
+    /* background-color: #ffffff28; */
+    background-image: linear-gradient( #0e2b55, #103364);
     transform: translate(0, -3px);
     opacity: 1;
 }
@@ -174,6 +176,8 @@ section {
     margin: 10px;
     padding: 20px;
     width: 200px;
+    /* background-image: linear-gradient(#00000000, #ffffff15); */
+    background-image: linear-gradient( #0e2b55, #103364);
 }
 
 .btn-small {
@@ -193,7 +197,7 @@ section {
     z-index: -99;
     right: 0;
     position: absolute;
-    opacity: 1;
+    opacity: .3;
 }
 
 .slant {
@@ -479,8 +483,9 @@ footer a:hover {
 
 .text-box {
     padding: 25px 50px;
-    background-color: #ffffff07;
-    background-image: linear-gradient(#00000000, #ffffff15);
+    background-color: #072044;
+    /* background-image: linear-gradient(#00000000, #ffffff0c); */
+    background-image: linear-gradient( #072042, #0a264d);
 }
 
 .arrow {
@@ -584,9 +589,9 @@ footer a:hover {
     width: 200px;
     height: 200px;
     text-align: left;
-    background-color: #ffffff11;
+    /* background-color: #ffffff62; */
     /* background-image: url("../img/pattern.png") ; */
-    background-image: linear-gradient(#00000000, #ffffff13);
+    background-image: linear-gradient( #082347, #0b2750);
     /* background-repeat: no-repeat; */
     background-size: 100%;
     border-radius: 2px;
@@ -595,13 +600,14 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    /* opacity: .8; */
 }
 
 .post h2 {
     /* color: #bdc9da; */
     font-size: 1em;
     /* font-weight: bolder; */
-    opacity: .45;
+    opacity: .5;
     /* padding-bottom: 10px; */
     transition: all .2s;
 }
@@ -775,7 +781,7 @@ footer a {
     }
     /* FX */
     #gradient-1 {
-        opacity: .5;
+        opacity: .3;
     }
     .slant-3 {
         border-left: 70vw solid #00122b2a;
