@@ -743,7 +743,7 @@ footer a {
         height: 450px;
         width: 300px;
         transform: translateX(-10px) translateY(-300px) !important;
-        opacity: .6;
+        opacity: .4;
     }
     #particle-1-services {
         position: absolute;
@@ -759,6 +759,7 @@ footer a {
         width: 200px;
         transform: translateX(50px) translateY(-100px) !important;
         opacity: .5;
+        display: none;
     }
     #particle-3 {
         position: absolute;
@@ -768,6 +769,7 @@ footer a {
         overflow: hidden;
         transform: translateX(-60px) translateY(-150px) !important;
         opacity: .5;
+        display: none;
     }
     /* Hero */
     #hero-section {
@@ -778,7 +780,13 @@ footer a {
     .text-box {
         padding: 25px;
     }
+    #service-box a {
+        font-size: .85em;
+    }
     /* Anti-p */
+    .anti {
+        height: 90vh;
+    }
     #all,
     #right {
         flex-direction: column;
@@ -796,7 +804,7 @@ footer a {
         align-items: center;
     }
     .posts {
-        min-height: 130vh;
+        min-height: 110vh;
     }
     .post {
         width: 100%;
