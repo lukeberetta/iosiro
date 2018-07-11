@@ -40,11 +40,27 @@
             <img class="logo" src="img/logo_white.png" alt="iosiro">
           </a>
         </div>
+
         <nav class="fade-2">
           <h4>
             <ul>
-              <li>
-                <a href="./services.html">Services</a>
+              <li id="services">
+                <a href="#">Services</a>
+                <div class="nav-bottom nav-bottom-lrg">
+                  <h4>
+                    <ul>
+                      <li>
+                        <a href="services.html">Security</a>
+                      </li>
+                      <li>
+                        <a href="services.html">Auditing</a>
+                      </li>
+                      <li>
+                        <a href="services.html">Development</a>
+                      </li>
+                    </ul>
+                  </h4>
+                </div>
               </li>
               <li>
                 <a href="./anti-phishing.html">Anti-phishing</a>
@@ -70,9 +86,53 @@
             </ul>
           </h4>
         </nav>
+
+        <nav class="burger">
+          <span id="burger-svg">
+            <a href="#" onclick="toggleSideMenu()">
+              <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="1.5" />
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="1.5" />
+                <path d="M0,23 25,23" stroke="#fff" stroke-width="1.5" />
+              </svg>
+            </a>
+          </span>
+        </nav>
+
       </div>
     </div>
   </header>
+
+  <div class="side-nav" id="side-menu">
+    <a href="#" onclick="toggleSideMenu()" id="btn-close">&times;</a>
+    <div id="side-links">
+      <div>
+        <a href="index.html">
+          <h4>Home</h4>
+        </a>
+        <a href="services.html">
+          <h4>ICO Security</h4>
+        </a>
+        <a href="services.html">
+          <h4>Smart Contract Auditing</h4>
+        </a>
+        <a href="services.html">
+          <h4>Smart Contract Development</h4>
+        </a>
+        <a href="anti-phishing.html">
+          <h4 class="side-active">Anti-phishing</h4>
+        </a>
+      </div>
+      <div class="icons">
+        <a href="#">
+          <img src="img/email.svg" alt="email">
+        </a>
+        <a href="#">
+          <img src="img/phone.svg" alt="call">
+        </a>
+      </div>
+    </div>
+  </div>
 
   <!-- Hero -->
   <section>
@@ -162,18 +222,15 @@
     <div class="fade-2" id="particle-2"></div>
   </div>
 
+  <!-- CTA -->
   <section class="cta-wrapper">
     <div class="container cta fade-2">
-      <form class=" btn btn-cta">
-        <h2>
-          <a href="#">get a quote</a>
-        </h2>
-      </form>
-      <form class="btn btn-cta">
-        <h2>
-          <a href="#">contact us</a>
-        </h2>
-      </form>
+      <a href="#" class=" btn btn-cta">
+        <h2>Contact us</h2>
+      </a>
+      <a href="#" class=" btn btn-cta">
+        <h2>Get a quote</h2>
+      </a>
     </div>
   </section>
 
