@@ -766,7 +766,7 @@ footer a {
 #link-wrapper ul {
     padding: 40px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 #footer-text {
@@ -931,13 +931,10 @@ footer a {
         /* width: 8px; */
         padding: 0 12px;
     }
-    #logo-footer {
-        display: none;
-    }
-    #link-wrapper {
+    #link-wrapper ul {
         /* padding: 20px 0; */
         transform: scale(.95);
-        justify-content: center;
+        justify-content: space-between;
     }
 }
 
