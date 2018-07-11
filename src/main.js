@@ -54,8 +54,8 @@ function toggleSideMenu() {
   let links = document.getElementById("side-links");
   let close = document.getElementById("btn-close");
 
-  if (menu.style.width !== "350px") {
-    menu.style.width = "350px";
+  if (menu.style.width !== "100vw") {
+    menu.style.width = "100vw";
     links.style.opacity = 1;
     close.style.opacity = .9;
   } else {
