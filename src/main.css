@@ -839,7 +839,7 @@ footer a {
         flex-direction: column;
         justify-content: center;
         /* overflow: hidden; */
-        width: 90%;
+        width: 95%;
         max-width: 700px;
     }
     .container-small {
