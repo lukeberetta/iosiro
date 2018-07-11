@@ -34,7 +34,9 @@ function handleMedium(data) {
       month: "short",
       day: "numeric"
     };
-    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString();
+    // let date = new Date(posts[i].pubDate);
+    let date = posts[i].pubDate;
+    date = date.replace(/-/g, "/").replace(/ .*/, "");
 
     console.log(`\n Title: ${title} \n Link: ${link} \n Date: ${date}`);
 

@@ -62,10 +62,11 @@ h4 {
 }
 
 h6 {
-    width: 47%;
+    /* width: 47%; */
     font-weight: 100;
     letter-spacing: .5px;
     opacity: .8;
+    text-align: center;
 }
 
 p {
@@ -447,7 +448,7 @@ nav a:hover,
 }
 
 #side-links {
-    padding: 80px 30px;
+    padding: 40px 40px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -455,6 +456,10 @@ nav a:hover,
     white-space: nowrap;
     transition: all 1.5s;
     opacity: 0;
+}
+
+.side-active {
+    color: #072044;
 }
 
 .side-nav a {
@@ -475,6 +480,10 @@ nav a:hover,
     font-size: 42px;
     margin-left: 35px;
     opacity: 0;
+}
+
+.icons img {
+    width: 30px;
 }
 
 /* Footer */
@@ -754,11 +763,14 @@ footer a {
     align-items: center;
 }
 
-#link-wrapper,
-#footer-text {
+#link-wrapper ul {
     padding: 40px 0;
     display: flex;
     justify-content: space-between;
+}
+
+#footer-text {
+    padding: 40px 0;
 }
 
 /* Pallete */
@@ -773,8 +785,9 @@ footer a {
 
 /* Breakpoints */
 
+/* Phones & tablets */
+
 @media only screen and (max-width: 1024px) {
-    /* phones */
     /* general */
     header {
         padding-top: 30px;
@@ -889,14 +902,11 @@ footer a {
         flex-direction: column;
         align-items: center;
     }
-    .post-wrapper div {
-        /* width: 90%; */
-    }
     .posts {
         min-height: 110vh;
     }
     .post {
-        width: 100%;
+        width: 90vw;
         height: 150px;
         padding: 20px;
         margin: 10px 0px !important;
@@ -931,6 +941,10 @@ footer a {
     }
 }
 
-@media only screen and (min-width: 768px) {
-    /* tablets and desktop */
+/* Tablets & phone portrait */
+
+@media only screen and (min-width: 667px) and (max-width: 1024px) {
+    body {
+        display: none;
+    }
 }
