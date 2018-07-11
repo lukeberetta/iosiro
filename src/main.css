@@ -166,20 +166,26 @@ section {
 .btn:hover,
 .post:hover {
     /* cursor: pointer; */
-    background-color: #102b52;
-    background-image: linear-gradient( #ffffff00, #ffffff00);
     transform: translate(0, -3px);
     opacity: 1;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.07);
 }
 
-.btn-lrg {
+.btn-lrg,
+.btn-cta {
     font-size: .9em;
     margin: 10px;
     padding: 20px;
     width: 200px;
-    /* background-image: linear-gradient(#00000000, #ffffff15); */
     /* background-image: linear-gradient( #0e2b55, #103364); */
+}
+
+.btn-lrg {
     background-image: linear-gradient( #0a274d, #0d2a57);
+}
+
+.btn-cta {
+    background-image: linear-gradient(#ffffff10, #ffffff15);
 }
 
 .btn-small {
@@ -193,13 +199,13 @@ section {
 /* FX */
 
 #gradient-1 {
-    background-image: radial-gradient(circle at 200% -40%, #ffffff81, #00000000 65%);
+    background-image: radial-gradient(circle at 200% -40%, #5bb5ff, #00000000 65%);
     height: 300vh;
     width: 100vw;
     z-index: -99;
     right: 0;
     position: absolute;
-    opacity: .3;
+    opacity: .8;
 }
 
 .slant {
@@ -303,9 +309,9 @@ section {
     position: absolute;
     left: 40px;
     height: 250px;
-    width: 300px;
+    width: 250px;
     overflow: visible;
-    transform: translateY(-90px) !important;
+    transform: translateY(-130px) !important;
 }
 
 #particle-3 {
@@ -314,7 +320,7 @@ section {
     height: 250px;
     width: 250px;
     overflow: hidden;
-    transform: translateY(-150px) !important;
+    transform: translateY(-80px) !important;
 }
 
 .vignette {
@@ -358,6 +364,7 @@ header {
 }
 
 header .container {
+    /* width: 130%; */
     flex-direction: column;
     z-index: 1;
 }
@@ -408,8 +415,9 @@ nav a:hover,
     flex-direction: column;
     text-align: center;
     transform: translateX(-5px);
-    background-color: #ffffff11;
-    border-radius: 10px;
+    /* background-color: #ffffff11; */
+    background-image: linear-gradient( #ffffff10, #ffffff08);
+    border-radius: 3px;
     transition: all .2s;
 }
 
@@ -498,6 +506,7 @@ footer a:hover {
     /* background-image: linear-gradient(#00000000, #ffffff0c); */
     /* background-image: linear-gradient( #072042, #0a264d); */
     background-image: linear-gradient( #082347, #0b2750);
+    box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.05);
 }
 
 .arrow {
@@ -550,7 +559,7 @@ footer a:hover {
 /* Anti phishing */
 
 .anti {
-    height: 80vh;
+    height: 60vh;
 }
 
 .anti h1 {
@@ -582,7 +591,6 @@ footer a:hover {
 .posts {
     height: 80vh;
     text-align: center;
-    /* flex-direction: column; */
 }
 
 .posts .container {
@@ -594,21 +602,17 @@ footer a:hover {
 .post-wrapper {
     margin-top: 70px;
     display: flex;
-    /* flex-wrap: wrap; */
     width: 130%;
     justify-content: center;
 }
 
 .post {
-    margin: 10px;
+    margin: 10px !important;
     padding: 20px;
     width: 210px;
     height: 230px;
     text-align: left;
-    /* background-color: #ffffff62; */
-    /* background-image: url("../img/pattern.png") ; */
     background-image: linear-gradient( #082347, #0b2750);
-    /* background-repeat: no-repeat; */
     background-size: 100%;
     border-radius: 2px;
     transition: all .2s;
@@ -616,19 +620,20 @@ footer a:hover {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* opacity: .8; */
+}
+
+.post:hover {
+    background-image: linear-gradient( #09264d, #112f5c);
 }
 
 .post h2 {
-    /* color: #bdc9da; */
     font-size: 1em;
-    /* font-weight: bolder; */
     opacity: .5;
-    /* padding-bottom: 10px; */
     transition: all .2s;
 }
 
-.post h2:hover {
+.post:hover h2,
+.post:hover h4 {
     opacity: 1;
 }
 
@@ -639,7 +644,6 @@ footer a:hover {
 }
 
 .post span {
-    /* color: #55a0eb; */
     font-weight: bold;
 }
 

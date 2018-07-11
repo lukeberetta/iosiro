@@ -23,20 +23,28 @@ function handleMedium(data) {
   let posts = data.items;
 
   let squares = ["#square1", "#square2", "#square3", "#square4"];
-  let dates = ["#date1", "#date2", "#date3", "#date4"];
-  let links = ["#link1", "#link2", "#link3", "#link4"];
+  // let dates = ["#date1", "#date2", "#date3", "#date4"];
+  // let links = ["#link1", "#link2", "#link3", "#link4"];
 
   for (var i = 0; i < squares.length; i++) {
     let title = posts[i].title;
     let link = posts[i].link;
-    var options = { year: "numeric", month: "short", day: "numeric" };
-    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString("en-GB", options);
+    var options = {
+      year: "numeric",
+      month: "short",
+      day: "numeric"
+    };
+    let date = new Date(posts[i].pubDate + "Z").toLocaleDateString();
 
     console.log(`\n Title: ${title} \n Link: ${link} \n Date: ${date}`);
 
-    // document.querySelector(squares[i]).textContent = title;
-    document.querySelector(squares[i]).innerHTML = `<div onclick="window.open('${link}','mywindow');" style="cursor: pointer;"><h2>${title}</h2></div>`;
-    document.querySelector(dates[i]).textContent = date;
-    // document.querySelector(links[i]).innerHTML = `<a id="${links[i]}" href="${link}" target="_blank"><p>Read</p></a>`;
+    document.querySelector(squares[i]).innerHTML =
+      `<a href="${link}" target="_blank" class="post" id="${squares[i]}">
+        <h2>${title}</h2>
+        <div>
+          <h4><span>Blog</span></h4>
+          <h4 id="date1">${date}</h4> 
+        </div>
+      </a>`;
   }
 }
