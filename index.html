@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Heebo:300,400,500" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
   <link rel="stylesheet" type="text/css" media="screen" href="src/main.css" />
+  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 </head>
 
 <body class="page-home">
@@ -30,7 +32,6 @@
       <div class="slant-3"></div>
     </div>
 
-
     <!-- Header -->
     <header>
       <div class="container">
@@ -40,6 +41,7 @@
               <img class="logo" src="img/logo_white.png" alt="iosiro">
             </a>
           </div>
+
           <nav class="fade-2">
             <h4>
               <ul>
@@ -70,9 +72,47 @@
               </ul>
             </h4>
           </nav>
+
+          <nav class="burger">
+            <span id="burger-svg">
+              <a href="#" onclick="toggleSideMenu()">
+                <svg width="30" height="30">
+                  <path d="M0,5 30,5" stroke="#fff" stroke-width="1.5" />
+                  <path d="M0,14 30,14" stroke="#fff" stroke-width="1.5" />
+                  <path d="M0,23 30,23" stroke="#fff" stroke-width="1.5" />
+                </svg>
+              </a>
+            </span>
+          </nav>
+
         </div>
       </div>
     </header>
+
+    <div class="side-nav" id="side-menu">
+      <a href="#" onclick="toggleSideMenu()" id="btn-close">&times;</a>
+      <div id="side-links">
+
+        <a href="#">
+          <h4>Home</h4>
+        </a>
+        <a href="#">
+          <h4>ICO Security</h4>
+        </a>
+        <a href="#">
+          <h4>Smart Contract Auditing</h4>
+        </a>
+        <a href="#">
+          <h4>Smart Contract Development</h4>
+        </a>
+        <a href="#">
+          <h4>Anti-phishing</h4>
+        </a>
+        <a href="#">
+          <h4>Contact</h4>
+        </a>
+      </div>
+    </div>
 
     <!-- Hero -->
     <section id="hero-section">
@@ -133,7 +173,6 @@
       </div>
     </section>
 
-
     <!-- particle -->
     <div class="particles">
       <div class="fade-2" id="particle-2"></div>
@@ -141,8 +180,6 @@
 
     <!-- Vignette -->
     <!-- <div class="fade-2 vignette" id="vignette-2"></div> -->
-
-
 
     <!-- Anti-phishing -->
     <section class="anti">
@@ -214,16 +251,18 @@
             </a>
           </div>
 
-          <div id="square4">
-            <a class="post">
-              <h1></h1>
-              <div>
-                <h4>
-                  <span>Blog</span>
-                </h4>
-                <h4 id="date4"></h4>
-              </div>
-            </a>
+          <div id="last-post">
+            <div id="square4">
+              <a class="post">
+                <h1></h1>
+                <div>
+                  <h4>
+                    <span>Blog</span>
+                  </h4>
+                  <h4 id="date4"></h4>
+                </div>
+              </a>
+            </div>
           </div>
 
         </div>
@@ -302,8 +341,6 @@
         </div>
       </div>
     </footer>
-
-
 
   </div>
   <!-- Scripts -->

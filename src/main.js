@@ -48,3 +48,19 @@ function handleMedium(data) {
       </a>`;
   }
 }
+
+function toggleSideMenu() {
+  let menu = document.getElementById("side-menu");
+  let links = document.getElementById("side-links");
+  let close = document.getElementById("btn-close");
+
+  if (menu.style.width !== "350px") {
+    menu.style.width = "350px";
+    links.style.opacity = 1;
+    close.style.opacity = .9;
+  } else {
+    menu.style.width = "0px";
+    links.style.opacity = 0;
+    close.style.opacity = 0;
+  }
+}

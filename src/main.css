@@ -149,11 +149,11 @@ section {
 
 .btn {
     text-align: center;
-    /* background-color: #ffffff21; */
-    border-radius: 1px;
+    font-weight: bolder;
+    border-radius: 2px;
     transition: all .2s;
     color: #fff;
-    opacity: .7;
+    opacity: .8;
 }
 
 .btn-learn {
@@ -425,10 +425,57 @@ nav a:hover,
     display: block;
 }
 
-/* .nav-bottom li {
-    padding-bottom: 5px;
-    transition: all .2s;
-} */
+/* Burger */
+
+.burger {
+    display: none;
+}
+
+#burger-svg a {
+    padding: 0;
+}
+
+.side-nav {
+    position: fixed;
+    z-index: 99;
+    height: 100vh;
+    background-color: #f66363;
+    width: 0;
+    overflow-x: hidden;
+    top: 0;
+    transition: all .1s;
+}
+
+#side-links {
+    margin: 100px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    transition: all 1.4s;
+    opacity: 0;
+}
+
+.side-nav a {
+    padding: 10px;
+    transition: all 1s;
+}
+
+.side-nav h4 {
+    font-size: 1em;
+    font-weight: bolder;
+}
+
+#btn-close {
+    font-weight: 100;
+    position: absolute;
+    top: 0;
+    right: 15px;
+    font-size: 42px;
+    margin-left: 30px;
+    opacity: 0;
+}
+
+/* Footer */
 
 footer a:hover {
     opacity: .6;
@@ -447,8 +494,8 @@ footer a:hover {
 .hero h3,
 .hero-2 h3 {
     padding: 20px 0;
-    opacity: .6;
-    font-size: 14.5px;
+    opacity: .8;
+    font-size: 16px;
     letter-spacing: 3.5px;
 }
 
@@ -734,6 +781,9 @@ footer a {
     nav {
         display: none;
     }
+    .burger {
+        display: block;
+    }
     section {
         height: 100vh;
         overflow: hidden;
@@ -800,13 +850,11 @@ footer a {
         display: none;
     }
     /* FX */
-    #gradient-1 {
-        opacity: .3;
-    }
     .slant-3 {
         border-left: 70vw solid #00122b2a;
         border-bottom: 1000px solid transparent;
     }
+    /* Header */
     /* Hero */
     #hero-section {
         height: 90vh;
