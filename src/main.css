@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    -webkit-tap-highlight-color: #00000000;
 }
 
 body {
@@ -72,7 +71,7 @@ h6 {
 
 p {
     font-weight: lighter;
-    opacity: .6;
+    opacity: .65;
     padding: 20px 0px;
     font-size: 14.5px;
     letter-spacing: 1.5px;
@@ -253,14 +252,14 @@ section {
 }
 
 .slant-2b {
-    height: 180vh;
-    border-right: 100vw solid #00000031;
+    height: 210vh;
+    border-right: 100vw solid #0000001c;
     border-top: 200px solid transparent;
     /* transform: translateY(-50px); */
 }
 
 .slant-2c {
-    height: 185vh;
+    height: 160vh;
     border-right: 100vw solid #0000001e;
     border-top: 200px solid transparent;
     transform: translateY(100px);
@@ -277,8 +276,8 @@ section {
 }
 
 .slant-3c {
-    border-left: 70vw solid #00000023;
-    border-bottom: 3000px solid transparent;
+    border-left: 60vw solid #00000023;
+    border-bottom: 2500px solid transparent;
 }
 
 .particles {
@@ -441,6 +440,7 @@ nav a:hover,
 
 .burger {
     display: none;
+    -webkit-tap-highlight-color: #00000000;
 }
 
 #burger-svg a {
@@ -456,6 +456,7 @@ nav a:hover,
     overflow-x: hidden;
     top: 0;
     transition: all .2s;
+    -webkit-tap-highlight-color: #00000000;
 }
 
 #side-links {
@@ -522,6 +523,20 @@ footer a:hover {
     opacity: .8;
     font-size: 16px;
     letter-spacing: 3.5px;
+}
+
+.sub-hero {
+    text-align: right;
+    padding: 30px;
+    border-radius: 3px;
+    background-image: linear-gradient(90deg, #00000000, #ffffff1e);
+    box-shadow: 0px 5px 70px rgba(0, 0, 0, 0.05);
+    font-size: 1.2em;
+    line-height: 3px;
+}
+
+.sub-hero h4 {
+    opacity: .45;
 }
 
 /* Services */
@@ -598,7 +613,7 @@ footer a:hover {
 }
 
 .service-item-wrapper {
-    height: 80vh;
+    height: 45vh;
 }
 
 .service-header {
@@ -610,8 +625,9 @@ footer a:hover {
     flex-direction: row;
 }
 
-.service-item h1 {
-    width: 200px;
+.service-item-reverse {
+    flex-direction: row-reverse;
+    text-align: right;
 }
 
 .service-header {
@@ -626,13 +642,13 @@ footer a:hover {
 }
 
 .cta-wrapper {
-    height: 50vh;
+    height: 40vh;
 }
 
 .cta {
     display: flex;
     flex-direction: row;
-    transform: translateY(-100%);
+    transform: translateY(-100px);
 }
 
 .cta a {
@@ -993,7 +1009,7 @@ footer a {
     }
     .cta-wrapper {
         height: 40vh;
-        transform: translateY(-60px);
+        transform: translateY(-20px);
     }
     /* Footer */
     footer {
