@@ -11,19 +11,19 @@
   <link rel="stylesheet" type="text/css" media="screen" href="./src/main.css" />
 </head>
 
-<body class="page-services">
+<body class="page-home">
 
   <!-- Gradient -->
   <div id="gradient-1" class="fade-2"></div>
 
   <!-- Slant -->
   <div class="slant">
-    <div class="slant-1b"></div>
+    <div class="slant-ico-1"></div>
   </div>
 
   <!-- Slant -->
   <div class="slant">
-    <div class="slant-3b"></div>
+    <div class="slant-ico-3"></div>
   </div>
 
   <!-- particle -->
@@ -45,18 +45,18 @@
           <h4>
             <ul>
               <li id="services">
-                <a href="#">Services</a>
+                <a>Services</a>
                 <div class="nav-bottom nav-bottom-lrg">
                   <h4>
                     <ul>
                       <li>
-                        <a href="ico-security.html">Security</a>
+                        <a href="auditing.html">Auditing</a>
                       </li>
                       <li>
-                        <a href="#">Auditing</a>
+                        <a href="development.html">Development</a>
                       </li>
                       <li>
-                        <a href="#">Development</a>
+                        <a href="security.html">Security</a>
                       </li>
                     </ul>
                   </h4>
@@ -77,7 +77,7 @@
                         <a href="mailto:hello@iosiro.com?Subject=Hello, iosiro!">email</a>
                       </li>
                       <li>
-                        <a href="#">facebook</a>
+                        <a href="#">Audit request</a>
                       </li>
                     </ul>
                   </h4>
@@ -103,36 +103,7 @@
     </div>
   </header>
 
-  <div class="side-nav" id="side-menu">
-    <a href="#" onclick="toggleSideMenu()" id="btn-close">&times;</a>
-    <div id="side-links">
-      <div>
-        <a href="index.html">
-          <h4 class="side-active">Home</h4>
-        </a>
-        <a href="ico-security.html">
-          <h4>ICO Security</h4>
-        </a>
-        <a href="#.html">
-          <h4>Smart Contract Auditing</h4>
-        </a>
-        <a href="#.html">
-          <h4>Smart Contract Development</h4>
-        </a>
-        <a href="anti-phishing.html">
-          <h4>Anti-phishing</h4>
-        </a>
-      </div>
-      <div class="icons">
-        <a href="#">
-          <img src="img/email.svg" alt="email">
-        </a>
-        <a href="#">
-          <img src="img/phone.svg" alt="call">
-        </a>
-      </div>
-    </div>
-  </div>
+  <!-- Mobile Menu -->
 
   <div class="side-nav" id="side-menu">
     <a href="#" onclick="toggleSideMenu()" id="btn-close">&times;</a>
@@ -141,14 +112,14 @@
         <a href="index.html">
           <h4>Home</h4>
         </a>
-        <a href="services.html">
-          <h4 class="side-active">ICO Security</h4>
-        </a>
-        <a href="services.html">
+        <a href="auditing.html">
           <h4>Smart Contract Auditing</h4>
         </a>
-        <a href="services.html">
+        <a href="development.html">
           <h4>Smart Contract Development</h4>
+        </a>
+        <a href="security.html">
+          <h4 class="side-active">ICO Security</h4>
         </a>
         <a href="anti-phishing.html">
           <h4>Anti-phishing</h4>
@@ -177,107 +148,111 @@
   <!-- Text -->
   <section class="service-item-wrapper">
     <div class="container-lrg sub-hero fade-2">
-      <h4>
-        Initial Coin Offerings (ICO's) present a high level of risk to both organizers and investors. The large sums of cryptocurrencies
-        raised during ICOs are an attractive target for attackers. Sensitive data collected during KYC processes adds additional
-        risk that may deter potential investors from participating. With years of experience in security, iosiro provides
-        a turnkey ICO security solution that strengthens the security posture of systems used in ICOs. The solution addresses
-        many of the threats posed during a typical token sale. Our solution includes the following features:
-      </h4>
+      <p>
+        Initial Coin Offerings (ICO's) present a
+        <span> high level of risk</span> to both organizers and investors. The large sums of cryptocurrencies raised during ICOs
+        are an attractive target for attackers. Sensitive data collected during KYC processes adds additional risk that may
+        deter potential investors from participating.
+        <span>With years of experience in security,</span> iosiro provides a turnkey ICO security solution that strengthens the
+        security posture of systems used in ICOs. The solution addresses many of the threats posed during a typical token
+        sale.
+      </p>
+      <!-- particle -->
+      <div class="particles">
+        <div class="fade-2" id="particle-3"></div>
+      </div>
     </div>
+
   </section>
 
   <!-- Service Items -->
-  <section class="service-item-wrapper">
-    <div class="service-item container fade-2 ">
-      <div class="service-header">
-        <h1 class="light-text">01.</h1>
-      </div>
-      <div class="service-body">
-        <h3>PHISHING COUNTERMEASURES</h3>
-        <p>We use both traditional defense mechanisms, such as detecting website clones, as well as novel techniques, such as
-          deploying monitoring agents on popular communication channels.
-        </p>
+  <div class="service-container">
+
+    <div id="sticky-left-security" data-sticky-container>
+      <div class="sticky-btn" data-sticky data-sticky-for="1023" data-margin-top="400">
+        <h3>Security features:</h3>
       </div>
     </div>
-  </section>
 
-  <!-- particle -->
-  <div class="particles">
-    <div class="fade-2" id="particle-3"></div>
+    <div id="sticky-right">
+      <div class="service-item fade-2 ">
+        <div class="light-text-wrapper">
+          <h1 class="light-text">01.</h1>
+        </div>
+        <div class="service-body-wrapper">
+          <h3>PHISHING COUNTERMEASURES</h3>
+          <p>We use both traditional defense mechanisms, such as detecting website clones, as well as novel techniques, such
+            as deploying monitoring agents on popular communication channels.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item fade-2 ">
+        <div class="light-text-wrapper">
+          <h1 class="light-text">02.</h1>
+        </div>
+        <div class="service-body-wrapper">
+          <h3>PENETRATION TESTING</h3>
+          <p>A system is only as strong as its weakest link. The importance of securing off-chain systems, such as registration
+            services or promotional websites, is often overlooked. iosiro can help by testing systems to identify and remedy
+            security vulnerabilities before attackers discover them.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item fade-2 ">
+        <div class="light-text-wrapper">
+          <h1 class="light-text">03.</h1>
+        </div>
+        <div class="service-body-wrapper">
+          <h3>SECURE STORAGE PROCESS DESIGN</h3>
+          <p>Balancing security with usability can be a challenging task when storing funds raised through a token sale. We
+            help design a configuration that achieves the right balance for you through multisig, hot and cold, and hardware
+            wallets. iosiro also provides training for staff members who need to access the funds to ensure that they understand
+            how to keep the funds safe.
+          </p>
+        </div>
+      </div>
+
+      <!-- particle -->
+      <div class="particles">
+        <div class="fade-2" id="particle-2"></div>
+      </div>
+
+
+      <div class="service-item fade-2 ">
+        <div class="light-text-wrapper">
+          <h1 class="light-text">04.</h1>
+        </div>
+        <div class="service-body-wrapper">
+          <h3>SMART CONTRACT SECURITY AUDIT</h3>
+          <p>We audit your contracts to identify vulnerable code, whether it’s logic flaws, using unsafe design patterns, or
+            not following best practices. The report from the audit can be publicly referenced and shared with your investors
+            to instill confidence.
+          </p>
+        </div>
+      </div>
+
+      <div class="service-item fade-2 ">
+        <div class="light-text-wrapper">
+          <h1 class="light-text">05.</h1>
+        </div>
+        <div class="service-body-wrapper">
+          <h3>KYC/AML SECURITY REQUIREMENTS</h3>
+          <p>Requirements for KYC/AML compliance differ between countries. Typically, a significant amount of security compliance
+            is required, including minimum standards for encryption of data in transit and at rest, restricted access to
+            customer information, and following security best practices. We help you address these concerns and can make
+            recommendations around how best to implement security changes to your environment.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-
-  <section class="service-item-wrapper">
-    <div class="service-item service-item-reverse  container fade-2 ">
-      <div class="service-header">
-        <h1 class="light-text">02.</h1>
-      </div>
-      <div class="service-body">
-        <h3>PENETRATION TESTING</h3>
-        <p>A system is only as strong as its weakest link. The importance of securing off-chain systems, such as registration
-          services or promotional websites, is often overlooked. iosiro can help by testing systems to identify and remedy
-          security vulnerabilities before attackers discover them.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <!-- Slant -->
   <div class="slant">
-    <div class="slant-2b"></div>
+    <div class="slant-ico-2"></div>
   </div>
-
-  <section class="service-item-wrapper">
-    <div class="service-item container fade-2 ">
-      <div class="service-header">
-        <h1 class="light-text">03.</h1>
-      </div>
-      <div class="service-body">
-        <h3>SECURE STORAGE PROCESS DESIGN</h3>
-        <p>Balancing security with usability can be a challenging task when storing funds raised through a token sale. We help
-          design a configuration that achieves the right balance for you through multisig, hot and cold, and hardware wallets.
-          iosiro also provides training for staff members who need to access the funds to ensure that they understand how
-          to keep the funds safe.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- particle -->
-  <div class="particles">
-    <div class="fade-2" id="particle-2"></div>
-  </div>
-
-  <section class="service-item-wrapper">
-    <div class="service-item service-item-reverse container fade-2 ">
-      <div class="service-header">
-        <h1 class="light-text">04.</h1>
-      </div>
-      <div class="service-body">
-        <h3>SMART CONTRACT SECURITY AUDIT</h3>
-        <p>We audit your contracts to identify vulnerable code, whether it’s logic flaws, using unsafe design patterns, or not
-          following best practices. The report from the audit can be publicly referenced and shared with your investors to
-          instill confidence.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <section class="service-item-wrapper">
-    <div class="service-item container fade-2 ">
-      <div class="service-header">
-        <h1 class="light-text">05.</h1>
-      </div>
-      <div class="service-body">
-        <h3>KYC/AML SECURITY REQUIREMENTS</h3>
-        <p>Requirements for KYC/AML compliance differ between countries. Typically, a significant amount of security compliance
-          is required, including minimum standards for encryption of data in transit and at rest, restricted access to customer
-          information, and following security best practices. We help you address these concerns and can make recommendations
-          around how best to implement security changes to your environment.
-        </p>
-      </div>
-    </div>
-  </section>
 
   <!-- CTA -->
   <section class="cta-wrapper">
@@ -325,6 +300,10 @@
 
   <!-- Scripts -->
   <script src="src/scroll.js"></script>
+  <script src="src/sticky.min.js"></script>
+  <script>
+    var sticky = new Sticky('[data-sticky]', {});
+  </script>
   <script src="./src/particles/particles.min.js"></script>
   <script src="./src/particles/particles.services.js"></script>
   <script src="./src/main.js"></script>
