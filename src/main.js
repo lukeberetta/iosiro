@@ -1,3 +1,21 @@
+// Preloader
+var overlay = document.querySelector("#overlay");
+var preloader = document.querySelector(".spinner");
+setTimeout(() => {
+  preloader.style.opacity = 1;
+}, 150);
+window.addEventListener("load", function() {
+  setTimeout(() => {
+    preloader.style.opacity = 0;
+  }, 1200);
+  setTimeout(() => {
+    overlay.style.opacity = 0;
+    overlay.style["z-index"] = "-99";
+    // preloader.style.opacity = 0;
+  }, 1500);
+
+});
+
 // Custom Medium API
 const converter = "https://api.rss2json.com/v1/api.json?rss_url=";
 const mediumLink = "https%3A%2F%2Fmedium.com%2Ffeed%2F%40NickyWoolf%3Fformat%3Djson";
