@@ -458,7 +458,7 @@ nav a:hover,
     z-index: 99;
     height: 100vh;
     /* background-color: #f66363; */
-    background-image: linear-gradient(60deg, #072044, #1c4d97ef);
+    background-image: linear-gradient(60deg, #1c4d97, #072044e3);
     width: 0;
     overflow-x: hidden;
     top: 0;
@@ -467,7 +467,7 @@ nav a:hover,
 }
 
 #side-links {
-    padding: 40px 40px;
+    padding: 40px 40px 100px 40px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -503,6 +503,7 @@ nav a:hover,
     /* margin-left: 35px; */
     /* margin: 10px; */
     opacity: 0;
+    display: none;
 }
 
 .icons img {
