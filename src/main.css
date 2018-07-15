@@ -162,7 +162,7 @@ section {
 .spinner {
     width: 80px;
     height: 80px;
-    border: 2px solid #f3f3f3;
+    border: 2px solid #ffffff00;
     border-top: 3px solid #f66363;
     border-radius: 100%;
     position: absolute;
@@ -189,7 +189,7 @@ section {
     height: 100%;
     width: 100%;
     background-color: #082347;
-    background-image: linear-gradient(0deg, #061e3d, #0d3269);
+    background-image: linear-gradient(200deg, #061e3d, #07295c);
     position: fixed;
     left: 0;
     top: 0;

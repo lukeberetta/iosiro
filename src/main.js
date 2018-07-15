@@ -4,6 +4,7 @@ var preloader = document.querySelector(".spinner");
 setTimeout(() => {
   preloader.style.opacity = 1;
 }, 150);
+
 window.addEventListener("load", function() {
   setTimeout(() => {
     preloader.style.opacity = 0;
@@ -13,7 +14,6 @@ window.addEventListener("load", function() {
     overlay.style["z-index"] = "-99";
     // preloader.style.opacity = 0;
   }, 1500);
-
 });
 
 // Custom Medium API
