@@ -1254,9 +1254,9 @@ footer a {
 
 @media only screen and (min-width: 1024px) and (max-width: 1366px) {}
 
-/* All Landscape */
+/* Landscape phones */
 
-@media (orientation: landscape) {
+@media only screen and (max-height: 480px) {
     #hero-section {
         transform: translateY(-60px) scale(.9);
     }
