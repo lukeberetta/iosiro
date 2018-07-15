@@ -8,6 +8,7 @@
 
 body {
     -webkit-font-smoothing: subpixel-antialiased;
+    /* -webkit-font-smoothing: antialiased; */
     -webkit-text-stroke: 1px transparent;
     font-family: 'Heebo', sans-serif;
 }
@@ -206,13 +207,13 @@ section {
 /* FX */
 
 #gradient-1 {
-    background-image: radial-gradient(circle at 200% -40%, #5bb5ff, #00000000 65%);
+    background-image: radial-gradient(circle at 200% -40%, #2870dd, #00000000 65%);
     height: 300vh;
     width: 100vw;
     z-index: -99;
     right: 0;
     position: absolute;
-    opacity: .8;
+    /* opacity: .8; */
 }
 
 .slant {
@@ -456,7 +457,8 @@ nav a:hover,
     position: fixed;
     z-index: 99;
     height: 100vh;
-    background-color: #f66363;
+    /* background-color: #f66363; */
+    background-image: linear-gradient(60deg, #072044, #1c4d97ef);
     width: 0;
     overflow-x: hidden;
     top: 0;
@@ -469,41 +471,43 @@ nav a:hover,
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     white-space: nowrap;
     transition: all 1.5s;
     opacity: 0;
 }
 
 .side-active {
-    color: #072044;
-    border-bottom: 2px solid #07204477 !important;
+    color: #f66363;
+    border-bottom: 1px solid #f6636375 !important;
 }
 
 .side-nav a {
-    padding: 10px;
+    /* padding: 10px; */
     transition: all 1s;
 }
 
 .side-nav h4 {
-    font-size: 1em;
-    font-weight: bolder;
-    padding: 8px 0 27px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.473);
+    font-size: .9em;
+    /* font-weight: bolder; */
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 #btn-close {
     font-weight: 100;
     position: absolute;
-    top: 0;
-    right: 28px;
+    top: 10px;
+    right: 32px;
     font-size: 42px;
-    margin-left: 35px;
+    /* margin-left: 35px; */
+    /* margin: 10px; */
     opacity: 0;
 }
 
 .icons img {
-    width: 30px;
+    width: 25px;
+    margin: 30px 25px 0 0;
 }
 
 /* Footer */
@@ -1063,7 +1067,7 @@ footer a {
     }
     .hero-2 {
         text-align: center;
-        transform: translateY(100px) !important;
+        transform: translateY(70px) !important;
     }
     /* Services */
     .service-container {
@@ -1131,9 +1135,11 @@ footer a {
         height: 100%;
         overflow: visible;
         margin-bottom: 60px;
+        width: 100vw;
     }
     .sub-hero {
         text-align: center;
+        padding: 11px;
     }
     /* infographic */
     #infographic {
