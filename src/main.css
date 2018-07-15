@@ -7,9 +7,7 @@
 }
 
 body {
-    -webkit-font-smoothing: subpixel-antialiased;
-    /* -webkit-font-smoothing: antialiased; */
-    -webkit-text-stroke: 1px transparent;
+    -webkit-font-smoothing: antialiased;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -67,20 +65,25 @@ h4 {
 }
 
 h6 {
-    /* width: 47%; */
     font-weight: 100;
     letter-spacing: .5px;
-    opacity: .8;
     text-align: center;
 }
 
 p {
     font-weight: lighter;
-    opacity: .5;
     padding: 20px 0px;
     font-size: 14.5px;
     letter-spacing: 1.5px;
     line-height: 23px;
+}
+
+p,
+h6 {
+    /* safari */
+    opacity: .6;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-text-stroke: 1px transparent;
 }
 
 hr {
@@ -972,7 +975,7 @@ footer a {
 
 /* Phones & tablets */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1020px) {
     /* general */
     header {
         padding-top: 30px;
@@ -1024,13 +1027,15 @@ footer a {
         opacity: .4;
     }
     #particle-1-services {
+        transform: translateX(-50px) translateY(450px) !important;
         position: absolute;
         /* left: 45%; */
         bottom: 79%;
-        height: 230px;
-        width: 230px;
+        /* left: 10px; */
+        height: 470px;
+        width: 270px;
         /* transform: translateY(20px) !important; */
-        opacity: 1;
+        opacity: .6;
         /* display: none; */
     }
     #particle-2 {
@@ -1240,10 +1245,10 @@ footer a {
     }
 }
 
-/* Tablets & phone portrait */
+/* Tablets landscape */
 
-@media only screen and (min-width: 667px) and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) {
     body {
-        display: none;
+        /* display: none; */
     }
 }
