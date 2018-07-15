@@ -325,6 +325,13 @@ section {
     border-bottom: 2500px solid transparent;
 }
 
+.slant-home-2,
+.slant-anti-2,
+.slant-ico-2,
+.slant-develop-2 {
+    display: none;
+}
+
 .particles {
     display: flex;
     justify-content: center;
