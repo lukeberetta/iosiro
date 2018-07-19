@@ -999,7 +999,7 @@ a {
 
 #infographic-wrapper {
     width: 850px;
-    height: 450px;
+    height: 600px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1009,7 +1009,7 @@ a {
 }
 
 #infographic {
-    width: 500px;
+    width: 550px;
     height: 450px;
     margin: auto;
     background-image: url("../img/infographic.png");
@@ -1497,7 +1497,7 @@ footer a {
     }
     /* infographic */
     #infographic {
-        width: 100%;
+        width: 80%;
         height: 100%;
         margin: auto;
         -webkit-transform: scale(1.2);
